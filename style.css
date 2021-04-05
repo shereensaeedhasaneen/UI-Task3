@@ -1,0 +1,528 @@
+body{
+    background-color: rgb(191, 224, 235);
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 92vw;
+    margin: auto;
+   
+
+}
+/********************** Start Navbar *******************************/
+.navbar
+{
+    background-color: white;
+    color: gray;
+    overflow: hidden;
+    height: 50px;
+
+
+}
+
+.navbar ul.firstList{
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: left;
+    
+}
+.navbar ul.firstList li p{
+   margin-top: 10px;
+    
+}
+
+.navbar ul.secondList{
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: right;
+    margin-top: 18px;
+}
+.navbar ul li 
+{
+    float: left;
+    padding-right: 50px;
+}
+.fas{
+    font-size: 20px;
+    color: rgb(180, 175, 175);
+}
+
+@media(max-width:860px){
+    .navbar ul li 
+    {
+      padding-right: 15px;
+    }
+}
+/***************************** End Navbar *************************************/
+
+/***************************** Start Image Section *****************************/
+.image-container {
+    position: relative;
+    height: 87vh;
+}
+.responsive{
+    width: 100%;
+    height: 75vh;
+}
+.image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background: rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.white_button{
+    margin-right: 8px;
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    color: darkcyan;
+    background-color: rgb(198, 235, 235);
+    font-size: 15px;
+}
+.aqua_button{
+    margin-left: 8px;
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    background-color: darkcyan;
+    color: white;
+    font-size: 17px;
+}
+
+
+.dots_slider{
+    width: 100%;
+    position: absolute;
+    top: 88%;
+    height: 20px;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: none;
+    border-radius: 50%;
+    border: 1px solid rgb(20, 202, 202);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active{
+      background-color: rgb(20, 210, 210);
+  }
+
+.packages_buttons{
+    background-color: bisque;
+     width: 100%;
+     position: absolute;
+     top: 92.5%;
+     height: 50px;
+
+     display: inline-flex;
+}
+
+.packages_buttons button{
+     
+       
+        outline: none;
+        padding: 10px 20px;
+        width: 50%;
+}
+
+#Recommended_button{
+    color: white;
+    background-color: darkcyan;
+    border: 1px solid teal;
+    font-size: 17px;
+    font-weight: bold;
+}
+#main_button{
+    color: teal;
+    background-color: whitesmoke;
+    border:1px solid teal;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@media(max-width:500px){
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+   .white_button{
+       margin-right: 0px;
+   }
+   .aqua_button{
+       margin-left: 0px;
+   }
+   .image-container .after h1{
+       text-align: center;
+   }
+  /* .dots_slider{
+       top:90%;
+   }*/
+}
+/**************************** End Image Section *********************************/
+
+
+
+/****************************** Start internet Plans *******************************************************/
+.plans{
+    background-color: white;
+}
+.plans h2{
+    color: gray;
+}
+.plans h3{
+    text-align: center;
+    color: gray;
+}
+
+.circles_container{
+  
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+width: 500px;
+overflow: hidden;
+}
+.circles_container h4{
+    margin-bottom: 0px;
+    color: rgb(105, 104, 104);
+    font-size: 20px;
+}
+.circles_container .row-circle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pictures{
+    display: flex;
+    justify-content: center;
+}
+.pictures img{
+    width: 20px;
+    height: 20px;
+}
+@media (max-width:530px)
+{
+    .circles_container{
+        width: 300px;
+    }
+   
+}
+/****************************** End internet Plans ***********************************************************/
+
+
+/**************************** Start Footer ***************************************/
+.footer
+{
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  background-color: rgb(44, 43, 43);
+  
+}
+.footer .feat
+{
+    float: left;
+    width: 30.3333%;
+    margin-left: 18px;
+
+   
+   
+}
+.footer .feat h4, .footer .feat h3{
+    text-transform: capitalize;
+    color: rgb(204, 197, 197);
+    
+    
+}
+.footer .feat p{
+   font-size: 14px;
+   color:rgb(206, 206, 206) ;
+}
+
+.feat ul
+{ list-style: none;
+padding-left: 0;
+}
+.feat ul li{
+    display: inline;
+}
+.feat ul li .fab {
+    font-size: 20px;
+    color:rgb(240, 228, 228);
+    margin-right: 5px;
+}
+/**************************** End Footer *********************************************/
+
+/*************************** Start Offers ************************************************/
+.offers{
+   text-align: center;
+   background-color: rgb(230, 221, 221);
+   color: rgb(21, 148, 148);
+}
+.offers h1{
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+.offers ul{
+    padding-top: 20px;
+        list-style: none;
+        padding-left: 0;
+}
+
+.offers ul li{
+    display: inline;
+
+}
+.offers ul li img{
+width: 60px;
+height: 50px;
+margin-right: 5px;
+}
+/*************************** End offers *****************************************************/
+
+/*************************** Start Terms *******************************************************/
+
+.terms-container {
+    position: relative;
+}
+.responsive2{
+    width: 100%;
+    height: 55vh;
+}
+.terms-container .afterterms {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+}
+.terms-container .afterterms h1{
+    padding-left: 8%;
+    padding-top: 20px;
+    font-family: 'Chivo', sans-serif;
+    letter-spacing: 4px;
+}
+
+.terms-container .afterterms ul{
+    padding-left: 10%;
+    list-style: none;
+}
+.terms-container .afterterms ul li{
+font-size: 35px;
+}
+
+/*.terms-container .afterterms ul li::before{
+    content: "\2022";
+    color: teal;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+   
+   
+    }*/
+    .terms-container .afterterms ul li .fas{
+        font-size: 30px;
+        color: rgb(17, 138, 138);
+        margin-right: 7px;
+    }
+/*************************** End Terms ***********************************************************/
+
+/*************************** Start Features *************************************************************/
+
+.features-container {
+    position: relative;
+}
+
+.features-container .afterfeatures {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background: rgba(141, 230, 222, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.features-container .afterfeatures h1{
+    padding-left: 8%;
+    padding-top: 20px;
+    font-family: 'Chivo', sans-serif;
+    letter-spacing: 4px;
+}
+
+.circles
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    overflow: auto;
+    
+}
+
+.circles svg{
+    padding-top: 2%;
+    padding-left: 5%;
+}
+.circles svg text{
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+/*************************** End Features ****************************************************************/
+
+/************************* Start Data and Voice *************************************************************/
+.data{
+    background-color: white;
+}
+.data_button
+{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.data_button button{
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: rgb(17, 17, 49);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.data_details{
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+    
+}
+
+
+.voice_details{
+
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rectangle{
+    
+    display:block;
+    height:50px;
+    width:220px;
+    position:relative;
+    background-color: rgb(255, 255, 245);
+    border: 1px solid rgb(17, 17, 49);
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-left: 6%;
+    
+  }
+
+  .rectangle p{
+    color: rgb(17, 17, 49);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3px;
+  }
+  
+  .circle{
+    position:absolute;
+    height:60px;
+    width:60px;
+    border-radius:40px;
+    border:3px solid rgb(17, 17, 49);
+    top: -10px;
+    margin-left:-25px;
+   
+    background:rgb(17, 17, 49);
+  }
+  .circle p{
+      color: white;
+      font-size: 15px;
+      padding: 5px 2px 2px 2px;
+  }
+
+  .extra{
+    position:absolute;
+   text-align: center;
+    width:50px;
+    border-radius:40px;
+    border:1px solid teal;
+    top: -11px;
+   font-size: 13px;
+   color: teal;
+   
+    background:white;
+  }
+
+  .rectangle-voice{
+    
+    display:block;
+    height:50px;
+    width:220px;
+    position:relative;
+    background-color: rgb(255, 255, 245);
+    border: 1px solid teal;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    
+  }
+
+  .rectangle-voice p{
+    color: teal;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3px;
+  }
+  
+  .circle-voice{
+    position:absolute;
+    height:60px;
+    width:60px;
+    border-radius:40px;
+    border:3px solid teal;
+    top: -10px;
+    margin-left:-25px;
+   
+    background:teal
+  }
+  .circle-voice p{
+      color: white;
+      font-size: 15px;
+      padding: 5px 2px 2px 2px;
+  }
+/************************** End data and Voice *************************************************************/
+
