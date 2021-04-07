@@ -175,9 +175,35 @@ body{
    .image-container .after h1{
        text-align: center;
    }
+   .after img{
+       margin-bottom: 0;
+       margin-top: 20%;
+   }
+   .navbar ul li {
+       padding-right: 5px;
+       font-size: 12px;
+   }
+   .image-container .after h1 {
+      margin: 0;
+   }
   /* .dots_slider{
        top:90%;
    }*/
+}
+
+@media(max-width:490px){
+.buttons{
+    margin-bottom: 60px !important;
+}
+
+.terms-container .afterterms h1{
+    padding: 0;
+    margin: 0;
+}
+
+.terms-container .afterterms ul li{
+    font-size: 26px !important;
+}
 }
 /**************************** End Image Section *********************************/
 
